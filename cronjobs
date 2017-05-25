@@ -1,0 +1,17 @@
+### lap za poso
+
+# moj inkrementalni backup
+
+0 11 * * * /home/ivan/rsync_backup_incremental.sh
+
+# moj ne-inkrementalni owncloud backup
+
+0 17 * * * rsync -aP /home/ivan/IvanP /home/ivan/ownCloud
+
+### komp na faxu
+
+*/2 * * * * /home/administrator/diana/diana add /home/administrator/Dropbox/cyc$
+
+0 23 * * * rsync -azvh --delete /home/administrator/Downloads/completed_torrz/ $
+
+59 23 * * * shutdown
