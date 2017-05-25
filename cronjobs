@@ -15,3 +15,14 @@
 0 23 * * * rsync -azvh --delete /home/administrator/Downloads/completed_torrz/ $
 
 59 23 * * * shutdown
+
+### i još jednom za vježbu - lap za poso
+
+# moj inkrementalni backup
+
+0 11 * * * /home/ivan/rsync_backup_incremental.sh
+
+# moj ne-inkrementalni owncloud backup
+
+0 17 * * * rsync -aP /home/ivan/IvanP /home/ivan/ownCloud
+
