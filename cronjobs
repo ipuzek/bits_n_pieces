@@ -16,3 +16,13 @@
 
 59 23 * * * shutdown
 
+### hp @ kauč
+
+MAILTO=""
+
+# evidentiraj temperaturu mora + auto update grafića
+15 23 * * * /usr/bin/Rscript /home/ivan/Dropbox/temp_mora.R
+
+# torrent watch dir @ home
+*/2 * * * * /usr/bin/diana add /home/ivan/Dropbox/cyclingtor/watched_home/*.torrent; sleep 10; rm /home/ivan/Dropbox/cyclingtor/watched_home/*.torrent > /dev/null
+
