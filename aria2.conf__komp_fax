@@ -8,6 +8,7 @@
 # When this directive is commented out, aria2 will download the files to the
 # current directory where you execute the aria2 binary.
 dir=/home/administrator/Downloads/completed_torrz
+# dir=/home/ivan/Downloads/completed_torrz
 
 
 # Bit Torrent: If the speed of the incoming data (download) from other peers is
