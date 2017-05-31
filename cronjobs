@@ -10,9 +10,9 @@
 
 ### komp na faxu
 
-*/2 * * * * /home/administrator/diana/diana add /home/administrator/Dropbox/cyc$
+*/2 * * * * /home/administrator/diana/diana add /home/administrator/Dropbox/cyclingtor/watched_faks/*.torrent; sleep 30; rm /home/administrator/Dropbox/cyclingtor/watched_faks/*.torrent
 
-0 23 * * * rsync -azvh --delete /home/administrator/Downloads/completed_torrz/ $
+0 23 * * * rsync -azvh --delete /home/administrator/Downloads/completed_torrz/ /home/administrator/Downloads/completed_torrz_mega/
 
 59 23 * * * shutdown
 
