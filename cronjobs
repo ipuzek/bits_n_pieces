@@ -1,12 +1,16 @@
 ### lap za poso
 
-# moj inkrementalni backup
+# moj inkrementalni backup JUTRO
 
 0 11 * * * /home/ivan/rsync_backup_incremental.sh
 
-# moj ne-inkrementalni owncloud backup
+# moj kvazi-inkrementalni owncloud backup POPODNE
 
-0 17 * * * rsync -aP /home/ivan/IvanP /home/ivan/ownCloud
+0 17 * * * rsync --backup --backup-dir=`date +%Y.%m.%d` -a /home/ivan/IvanP/ /home/ivan/ownCloud/IvanP
+
+# moj kvazi-inkrementalni kauč backup NOCH
+
+59 23 * * * rsync --backup --backup-dir=`date +%Y.%m.%d` -a /home/ivan/IvanP/ ivan@192.168.5.13:backups/IvanP/
 
 ### komp na faxu
 
