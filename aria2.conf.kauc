@@ -18,14 +18,16 @@ dir=/home/ivan/Public/aria_dl
 # preferred incoming (download) speed. Speeds are in kilobytes per second or
 # megebytes per second and must be whole numbers; 5.5M is illegal but 5500K
 # and 5M is valid.
- bt-max-peers=55
- bt-request-peer-speed-limit=5M
-# max-concurrent-downloads=22
+
+bt-max-peers=55
+bt-request-peer-speed-limit=5M
+max-concurrent-downloads=22
 
 # Bit Torrent: the max upload speed for all torrents combined. Again, only
 # whole numbers are valid. We find a global upload limit is more flexible then
 # an upload limit per torrent. Zero(0) is unlimited.
- max-overall-upload-limit=500K
+
+max-overall-upload-limit=500K
 
 
 # Bit Torrent: When downloading a torrent remove ALL trackers from the listing.
@@ -33,16 +35,18 @@ dir=/home/ivan/Public/aria_dl
 # eXchange (PeX) on connections. We find start up of the torrent takes 20
 # seconds longer with all trackers disabled, but helps reduce the load on
 # trackers. 
- bt-exclude-tracker="*"
+
+# bt-exclude-tracker="*"
 
 
 # Bit Torrent: ports and protocols used for bit torrent TCP and UDP
 # connections. Peers use TCP. DHT and PEX as well as UDP based trackers use UDP
 # and make sure the DHT server is enabled.
- dht-listen-port=6895
- enable-dht=true
- enable-peer-exchange=true
- listen-port=6899
+ 
+dht-listen-port=6895
+enable-dht=true
+enable-peer-exchange=true
+listen-port=6899
 
 
 # When running aria2 on FreeBSD with ZFS, disable disk-cache due to ZFS using
@@ -64,9 +68,9 @@ dir=/home/ivan/Public/aria_dl
 
 
 # Bit Torrent: timeout values for servers and clients.
- bt-tracker-connect-timeout=10
- bt-tracker-interval=900
- bt-tracker-timeout=10
+# bt-tracker-connect-timeout=10
+# bt-tracker-interval=900
+# bt-tracker-timeout=10
 
 
 # Bit Torrent: Download the torrent file into memory (RAM) if there is no need
