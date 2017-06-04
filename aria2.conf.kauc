@@ -63,8 +63,8 @@ listen-port=6899
 # torrent traffic. Encryption is required and all older, non-encrypted clients
 # are ignored. This may help avoid some ISPs rate limiting P2P clients, but may
 # also reduce the amount of clients aria2 will talk to.
- bt-min-crypto-level=arc4
- bt-require-crypto=true
+# bt-min-crypto-level=arc4
+# bt-require-crypto=true
 
 
 # Bit Torrent: timeout values for servers and clients.
