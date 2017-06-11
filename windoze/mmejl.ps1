@@ -1,0 +1,1 @@
+﻿Send-MailMessage -From "ivan.puzek@gmail.com" -To "ivan.puzek@unizd.hr" -Subject "meh" -Body "just badi" -SmtpServer "smtp.gmail.com" -UseSsl -Credential “ivan.puzek”, (“PASS” | ConvertTo-SecureString -AsPlainText -Force) -Port 587
