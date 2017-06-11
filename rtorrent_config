@@ -1,0 +1,17 @@
+# prvo se spoji na wifi, ssh-iraj i ubi firewall
+# otkači wifi, ssh dalje ide normalno
+# swapon -a
+# pa rtorrent
+# SMISLI MU JOŠ NEKU NAMJENU! (s obzirom da se ubuntu mora i dalje vrtit)
+
+# fixni IP od rootera
+192.168.5.10
+
+# rtorrent port od rootera
+6898
+
+# Temporarily disable firewall
+Run /etc/init.d/firewall stop
+
+# test otvorenosti portova - profi poso
+nmap -p- 192.168.5.10
