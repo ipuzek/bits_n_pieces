@@ -6,11 +6,11 @@
 
 # moj kvazi-inkrementalni owncloud backup POPODNE
 
-0 17 * * * rsync --backup --backup-dir=`date +%Y.%m.%d` -a /home/ivan/IvanP/ /home/ivan/ownCloud/IvanP
+0 17 * * * rsync --backup --backup-dir=`date +\%Y.\%m.\%d` -a /home/ivan/IvanP/ /home/ivan/ownCloud/IvanP
 
 # moj kvazi-inkrementalni kauč backup NOCH
 
-59 23 * * * rsync --backup --backup-dir=`date +%Y.%m.%d` -a /home/ivan/IvanP/ ivan@192.168.5.13:backups/IvanP/
+59 23 * * * rsync --backup --backup-dir=`date +\%Y.\%m.\%d` -a /home/ivan/IvanP/ ivan@192.168.5.13:backups/IvanP/
 
 ### komp na faxu
 
