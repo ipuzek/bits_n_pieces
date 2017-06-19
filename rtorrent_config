@@ -15,3 +15,12 @@ Run /etc/init.d/firewall stop
 
 # test otvorenosti portova - profi poso
 nmap -p- 192.168.5.10
+
+# SCREEN
+
+screen -S sessionname
+
+screen: crtl-a d (detach)
+
+screen -R sessionname (reattach) ili way cooler
+screen -r
