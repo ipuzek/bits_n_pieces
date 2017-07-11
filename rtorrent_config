@@ -11,7 +11,10 @@
 6898
 
 # Temporarily disable firewall
-Run /etc/init.d/firewall stop
+/etc/init.d/firewall stop
+
+# disable wifi
+wifi down
 
 # test otvorenosti portova - profi poso
 nmap -p- 192.168.5.10
